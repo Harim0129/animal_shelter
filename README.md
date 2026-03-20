@@ -14,6 +14,19 @@ This project builds a data cleaning and preprocessing pipeline for animal shelte
 
 ---
 
+## Design Decisions
+- **Merge Before Cleaning:** Intake and outcome datasets were merged prior to cleaning to preserve relationships between records. Cleaning datasets separately could introduce inconsistencies or mismatches, so merging first ensured transformations were applied uniformly across linked data.
+
+- **Column Standardization:** Converted all column names to lowercase with underscores to ensure consistency and prevent errors in downstream analysis.
+
+- **Datetime Splitting:** Separated datetime fields into components (date, time) to support feature engineering and time-based analysis.
+
+- **Modular Functions:** Built reusable functions (e.g., `load_csv`, `save_csv`) to make the pipeline scalable and maintainable.
+
+- **Structured File Organization:** Separated raw and processed data to preserve original datasets and support reproducibility.
+
+---
+
 ## Project Structure
 animal_data/
 │── data/
