@@ -11,7 +11,9 @@ This repository contains data cleaning and preprocessing for an animal shelter d
 - **Goal:** Clean and structure the dataset to improve readability and usability, with the objective of analyzing how long animals typically stay in the shelter and estimating time to adoption.  
 - **Methods:** Merged intake and outcome datasets to create a unified master dataset, followed by data cleaning, column standardization, and datetime feature engineering. The cleaned dataset is designed to support analysis across variables such as breed, age, and intake conditions.  
 - **Scope:** Developed a reproducible data pipeline that produces a clean, standardized dataset for downstream analysis, ensuring consistency and preserving relationships between intake and outcome records.  
-- **Collaboration:** Conducted as part of a research project under UCSB Statistics Professor Tianyu Zhang.  
+
+## Author
+The data were cleaned and structured by Theresa Tran (UCSB, PSTAT). 
 
 ---
 
